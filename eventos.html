@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a id="topo"></a>
+
+  <div class="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg" alt="Logo do IFSP" />
+    </header>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="eventos.html">EVENTOS</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="entrar.html">ENTRAR</a>
+    </nav>
+
+    <main>
+      <h1>Inscreva-se</h1>
+
+      <form action="#" method="post">
+        <p>
+          <label for="evento">Evento</label>
+          <select id="evento" name="evento">
+            <option value="voce-sem-asas">Voce sem asas</option>
+            <option value="festa-junina">Festa junina</option>
+            <option value="semana-tecnologia">Semana de tecnologia</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Informações de Acesso</legend>
+
+          <p>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" placeholder="username" required />
+          </p>
+
+          <p>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+          </p>
+
+          <p>
+            <label for="confirmar-senha">Confirme a Senha</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <p>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required />
+          </p>
+
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" />
+          </p>
+
+          <fieldset>
+            <legend>Sexo</legend>
+            <label><input type="radio" name="sexo" value="masculino" /> Masculino</label>
+            <label><input type="radio" name="sexo" value="feminino" /> Feminino</label>
+          </fieldset>
+
+          <p>
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" />
+          </p>
+
+          <p>
+            <label for="cor">Cor Favorita</label>
+            <input type="color" id="cor" name="cor" />
+          </p>
+
+          <p>
+            <label for="github">Perfil no Github</label>
+            <input type="url" id="github" name="github" />
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Inscrever</button>
+          <button type="reset">Limpar</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>Desenvolvido para a atividade de HTML5 - Semana 05</p>
+    </footer>
+  </div>
+
+  <a class="top-link" href="#topo">
+    <img
+      src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/MoveTop.png"
+      alt="Voltar ao topo"
+    />
+  </a>
+</body>
+</html>
