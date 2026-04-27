@@ -3,87 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato</title>
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
-  <link rel="stylesheet" href="style.css">
+
+  <title>Contato - Semana 06</title>
+
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a id="topo"></a>
 
-  <div class="container">
-    <header>
-      <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg" alt="Logo do IFSP" />
-    </header>
+<a id="topo"></a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="eventos.html">Eventos</a>
-      <a href="contato.html">Contato</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="entrar.html">Entrar</a>
-      <a href="galeria.html">GALERIA</a>
-    </nav>
+<div class="container">
 
-    <main>
-      <h1>Mande uma mensagem</h1>
+  <header>
+    <img
+      src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg"
+      alt="Logo do IFSP">
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">HOME</a>
+
+    <div class="dropdown">
+      <a href="cursos.html">CURSOS</a>
+      <div class="dropdown-content">
+        <a href="#">ADS</a>
+        <a href="#">Engenharia de Produção</a>
+        <a href="#">Gestão em TI</a>
+        <a href="#">Letras</a>
+      </div>
+    </div>
+
+    <a href="eventos.html">EVENTOS</a>
+    <a href="galeria.html">GALERIA</a>
+    <a href="contato.html">CONTATO</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="entrar.html">ENTRAR</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h1>Mande uma Mensagem</h1>
 
       <form action="#" method="post">
-        <ul>
-          <li>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required />
-          </li>
 
-          <li>
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" required />
-          </li>
+        <p>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+        </p>
 
-          <li>
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" />
-          </li>
+        <p>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+        </p>
 
-          <li>
-            <label for="assunto">Assunto</label>
-            <select id="assunto" name="assunto">
-              <option value="">-- Selecione --</option>
-              <option value="duvida">Dúvida</option>
-              <option value="elogio">Elogio</option>
-              <option value="reclamacao">Reclamação</option>
-            </select>
-          </li>
+        <p>
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" />
+        </p>
 
-          <li>
-            <label for="mensagem">Mensagem</label><br />
-            <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
-          </li>
+        <p>
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="">-- Selecione --</option>
+            <option value="duvida">Dúvida</option>
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+          </select>
+        </p>
 
-          <li>
-            <fieldset>
-              <legend>Opções de Resposta</legend>
-              <label><input type="checkbox" name="resposta" value="email" /> E-Mail</label>
-              <label><input type="checkbox" name="resposta" value="telefone" /> Telefone</label>
-            </fieldset>
-          </li>
+        <p>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem"></textarea>
+        </p>
 
-          <li>
-            <button type="submit">Enviar</button>
-          </li>
-        </ul>
+        <fieldset>
+          <legend>Opções de Resposta</legend>
+
+          <label>
+            <input type="checkbox" name="resposta" value="email" />
+            E-mail
+          </label>
+
+          <label>
+            <input type="checkbox" name="resposta" value="telefone" />
+            Telefone
+          </label>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+
       </form>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <p>Desenvolvido para a atividade de HTML5 - Semana 05</p>
-    </footer>
-  </div>
+  <footer>
+    <p>Desenvolvido para a atividade de Introdução ao CSS - Semana 06</p>
+  </footer>
 
-  <a class="top-link" href="#topo">
-    <img
-      src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/MoveTop.png"
-      alt="Voltar ao topo"
-    />
-  </a>
+</div>
+
+<a class="top-link" href="#topo">
+  <img
+    src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/MoveTop.png"
+    alt="Voltar ao topo">
+</a>
+
 </body>
 </html>
