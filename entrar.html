@@ -3,51 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Entrar</title>
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
-  <link rel="stylesheet" href="style.css">
+
+  <title>Entrar - Semana 06</title>
+
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a id="topo"></a>
 
-  <div class="container">
-    <header>
-      <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg" alt="Logo do IFSP" />
-    </header>
+<a id="topo"></a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="eventos.html">Eventos</a>
-      <a href="contato.html">Contato</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="entrar.html">Entrar</a>
-    </nav>
+<div class="container">
 
-    <main>
-      <h1>Entrar</h1>
+  <header>
+    <img
+      src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg"
+      alt="Logo do IFSP">
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">HOME</a>
+
+    <div class="dropdown">
+      <a href="cursos.html">CURSOS</a>
+      <div class="dropdown-content">
+        <a href="#">ADS</a>
+        <a href="#">Engenharia de Produção</a>
+        <a href="#">Gestão em TI</a>
+        <a href="#">Letras</a>
+      </div>
+    </div>
+
+    <a href="eventos.html">EVENTOS</a>
+    <a href="galeria.html">GALERIA</a>
+    <a href="contato.html">CONTATO</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="entrar.html">ENTRAR</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h1>Área de Login</h1>
 
       <form action="#" method="post">
-        <label for="usuario">Usuário</label><br />
-        <input type="text" id="usuario" name="usuario" required /><br />
 
-        <label for="senha">Senha</label><br />
-        <input type="password" id="senha" name="senha" required /><br />
+        <p>
+          <label for="usuario">Usuário</label>
+          <input type="text" id="usuario" name="usuario" required />
+        </p>
 
-        <button type="submit">Entrar</button>
-        <a href="#">Esqueci a senha</a>
+        <p>
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required />
+        </p>
+
+        <p>
+          <button type="submit">Entrar</button>
+        </p>
+
+        <p>
+          <a href="#">Esqueci minha senha</a>
+        </p>
+
       </form>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <p>Desenvolvido para a atividade de HTML5 - Semana 05</p>
-    </footer>
-  </div>
+  <footer>
+    <p>Desenvolvido para a atividade de Introdução ao CSS - Semana 06</p>
+  </footer>
 
-  <a class="top-link" href="#topo">
-    <img
-      src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/MoveTop.png"
-      alt="Voltar ao topo"
-    />
-  </a>
+</div>
+
+<a class="top-link" href="#topo">
+  <img
+    src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/MoveTop.png"
+    alt="Voltar ao topo">
+</a>
+
 </body>
 </html>
